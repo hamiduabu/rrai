@@ -1,0 +1,482 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #d3d3d3;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+}
+
+.heading {
+  font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  min-height: 10%;
+  max-height: 15%;
+  text-align: center;
+  display: flex;
+  border-bottom: 1px solid #c0c0c0;
+  background-color: #8e4198;
+  justify-content: space-between;
+}
+
+.heading h1 {
+  font-size: 26px;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  color: #fff;
+}
+
+/*
+** App Utilities: Search and Filter Functions
+*/
+.app-utilities {
+  background-color: #8e4198;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(90% - 1px);
+  /*! Height(%) - 1px border bottom from ".heading" class */
+}
+
+
+
+.search-bar h2,
+.filter-options h2 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 5px 0 5px 10px;
+}
+
+.search-bar input {
+  width: 150px;
+  padding: 4px;
+  font-size: 0.75rem;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.search-bar button {
+  padding: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.map-container {
+  width: 70%;
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-loading-msg {
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.map-infowindow-content {
+  font-size: 12px;
+  width: 200px;
+  background-color: #d9b0de;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #2c2c2c;
+}
+
+.map-infowindow-content figure {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  max-width: 200px;
+}
+
+.map-infowindow-content img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 4px;
+
+}
+
+.filter-options {
+  text-align: center;
+  width: 30%;
+}
+
+.filter-options select,
+.filter-options button {
+  width: 30%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 4px;
+}
+
+
+/*
+** Lists: Restaurants & Review Comments
+*/
+.lists {
+  width: 30%;
+  height: 100%;
+  border-left: 1px solid #555;
+  overflow: auto;
+  text-align: center;
+}
+
+.lists ul,
+.modal-lists {
+  padding: 5px;
+  margin: 0;
+}
+
+.restaurant-details {
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.modal-lists li,
+.lists li {
+  list-style-type: none;
+  border: 1px solid #aaa7a7;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #8e4198;
+  color: #fff;
+}
+
+/*
+** Map Form: To add new Restaurant
+*/
+.map-form {
+  background-color: #fff;
+  border: 2px outset #dad3d3;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 99;
+  top: 10px;
+  left: 20%;
+}
+
+.map-form h2 {
+  font-size: 16px;
+  text-align: center;
+  margin: 7px auto;
+}
+
+.map-form>form {
+  width: 400px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.map-form>form label {
+  font-size: 14px;
+}
+
+.map-form>form input {
+  width: 220px;
+  height: 25px;
+  font-weight: 600;
+  background-color: rgba(142, 65, 152, 0.145);
+}
+
+.map-form>form input::placeholder {
+  font-weight: 400;
+  color: #818181;
+  font-size: 12px;
+}
+
+.map-form>form input:focus {
+  background-color: #fff;
+}
+
+.map-form sup {
+  color: #f10a0a;
+}
+
+.map-form section {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.map-form button {
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.rating-stars {
+  width: 32px;
+}
+
+/*
+** Modal: To display Restaurant Reviews and Image
+*/
+.modal {
+  color: #272626;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  overflow: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  justify-content: center;
+  display: none;
+}
+
+.modal-display {
+  opacity: 1;
+  pointer-events: auto;
+  display: flex;
+}
+
+.modal .modal-content {
+  background-color: #fff;
+  width: 80%;
+  max-height: 90%;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.modal-header h1 {
+  margin: 10px 0 5px;
+}
+
+.modal-header p {
+  margin: 5px 0 10px;
+}
+
+.modal-header .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 4px;
+  margin-right: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.modal-header .close-btn:hover {
+  opacity: 0.8;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.modal-content .modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
+  flex-wrap: wrap;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+.modal-body .new-review {
+  width: 50%;
+  height: 100%;
+}
+
+.modal-body .new-review form {
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.new-review form input[type='text'] {
+  width: 70%;
+  min-width: 240px;
+  height: 35px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.rating-inputs {
+  width: 100%;
+  text-align: center;
+}
+
+.rating-inputs label {
+  margin: 10px;
+  display: inline-block;
+}
+
+.rating-inputs label>p {
+  width: 44px;
+  margin: 0;
+  text-align: right;
+}
+
+.rating-star-img {
+  width: 28px;
+  filter: grayscale(100%);
+}
+
+img.highlighted {
+  filter: none;
+}
+
+img.highlighting {
+  filter: grayscale(15%);
+}
+
+.rating-inputs input[type='radio'] {
+  opacity: 0;
+}
+
+.new-review textarea {
+  width: 70%;
+  border-radius: 4px;
+}
+
+.modal-body .reviews-container {
+  width: 50%;
+  height: 100%;
+  max-height: 275px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.reviews-container h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal-body .restaurant-img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.restaurant-img-container .restaurant-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+** Modal: Error message when no Restaurant Image can be retrieved
+*/
+.error-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.new-review button,
+.modal-footer button {
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.modal-footer button span {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.fade {
+  opacity: 0;
+  transition: 1s;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+/*
+** Notification feedback for various actions
+*/
+.notification {
+  font-weight: 600;
+  background-color: #808080;
+  min-width: 300px;
+  color: #fff;
+  border: 1px solid #272525;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.notification h3 {
+  margin: 0;
+  padding: 5px;
+  background-color: #f08080;
+  font-size: 16px;
+}
+
+.notification p {
+  padding: 10px;
+  font-size: 14px;
+}

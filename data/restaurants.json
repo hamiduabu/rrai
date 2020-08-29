@@ -1,0 +1,327 @@
+[
+  {
+    "restaurantName": "Le Cinq",
+    "address": "31 Avenue George V, 75008 Paris, France",
+    "lat": 48.868794,
+    "lng": 2.300206,
+    "averageRating": 4.6,
+    "totalRatings": 970,
+    "reviews": [
+      {
+        "name": "Eleazar Ziemann",
+        "stars": 5,
+        "comment": "Amazing place. The entree I had was sublime. Service was prompt. Overall experience: 5 stars."
+      }
+    ],
+    "restaurantId": "ChIJqTQzIehv5kcRaF3hD1SzX5A",
+    "photos": [
+      {
+        "height": 864,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/114247032184063224295/photos\"\u003eMike Hiwaymann\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAuvVz75ycd-YRIBul1FyNL-AJHaNyMnAuU9FtZhmagE0eHkLnri9txlbyX3X0UlaOPtpxltZaM7oTRJtsC3j6CeQVZS2Ubk-44i-WYquUPSgAf6Dc_7iYkIZApy97EFzaEhDC_9KhnfoJf5G_bMjr66jPGhTYQoheFfH1zok14kjoZ_c-xl88jg",
+        "width": 1080
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "McJones Restaurant and Catering Services",
+    "address": "No. 27 Moshoeshoe Cl, Barnawa, Kaduna",
+    "lat": 10.464039,
+    "lng": 7.45002,
+    "averageRating": 4.3,
+    "totalRatings": 3,
+    "reviews": [
+      {
+        "name": "Bernadine Ziemann",
+        "stars": 4,
+        "comment": "I was pleasantly surprised. The entree I had was sublime. The waiter was prompt and polite. Overall experience: 4 stars."
+      },
+      {
+        "name": "Jamil Ondricka",
+        "stars": 5,
+        "comment": "My taste buds are still singing from our last visit! The entrees are simply to die for. I was happy to see how clean everything was. I'd give more than 5 stars if I could!"
+      },
+      {
+        "name": "Eleazar Smitham",
+        "stars": 4,
+        "comment": "Decent place. The food was cooked to perfection. I was happy to see how clean everything was."
+      }
+    ],
+    "restaurantId": "ChIJg6dDuRJKTRARU1zj8i_aJLk",
+    "photos": [
+      {
+        "height": 721,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/106010585601746207192/photos\"\u003eJide Jones1\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAo91ZDwAPSbBQU9FT_iFaXElA_0vpZ8c-6S9TdsxNRepTxn0uL_o96xZc3ntXcCWIrJhMp2_5HTcJsg9yZXoK8aLLH38KsyvL_x7Vhs5fHGnSaL_QjDr1ATBCDaVzN3EHEhAzphNyZVsIb8YpRRXb024FGhTtS78ZJfodc4toSO1R8RnBJdSXpA",
+        "width": 720
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "Chop Complete Restaurant",
+    "address": "18 Nyerere Road Narayi High Cost, Kaduna South",
+    "lat": 10.457783,
+    "lng": 7.447291,
+    "averageRating": 3.7,
+    "totalRatings": 3,
+    "reviews": [
+      {
+        "name": "Abigale Kemmer",
+        "stars": 4,
+        "comment": "This place was nearby and I decided to check it out. The service was good for the most part."
+      },
+      {
+        "name": "Johnathan Huels",
+        "stars": 3,
+        "comment": "Decent place. The steak was a little dry. The service was good for the most part. Satisfactory experience, will come again."
+      },
+      {
+        "name": "Quinton Herzog",
+        "stars": 4,
+        "comment": "I stumbled on this undiscovered gem right in our neighborhood. Everything was mostly decadent. The waitress did an excellent job. It failed to meet the 5-star experience because the floors were a little sticky."
+      }
+    ],
+    "restaurantId": "ChIJq5NK2RFKTRAR6Cn9pVk8XbY",
+    "photos": [
+      {
+        "height": 768,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/113123307741718081876/photos\"\u003eEye On Arewa\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAJDUsRsJzzru_fpnlKo_IGXoe3NbI_8WZzTD17rmEJc4FI6L-gLiNvUzU7iNel5mGezFXZa2NaF9-288lUDvlNnJKcNV1x-AxC-I2B1tRuK-J5w7UE3A3uWZolD8FEgTyEhDaaYx7SiJMnEB0DYzvqEKZGhSvU87nTfrlg8gHO-r2zBvoNb2uag",
+        "width": 1024
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "SWEETAFOODS",
+    "address": "7 Shagari Rd, Barnawa, Kaduna",
+    "lat": 10.474831,
+    "lng": 7.441904,
+    "averageRating": 0,
+    "totalRatings": 0,
+    "reviews": [],
+    "restaurantId": "ChIJYSnRg3BKTRARHzMIi7wMssU",
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/115631471428701591266/photos\"\u003eGideon Madaki\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAjGdISJAKR2Kqz32_1RsxTsXqggO_bRtSkEabuQqMFoXdYaYyYkPogh5EJaNabVhiGyFV4-blqoWg3BZcQrvIVYbK1f9X9fJ_Jp1B8Cwp0KNr25tqjzjERpYxKBNvt5m0EhCvtUv3uU9MoEUVlTpJNdtJGhTHe-8698mUUN3tfpME_mIaSPuyzw",
+        "width": 3024
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "Foodways",
+    "address": "Nuhu Aliya Crescent., Barnawa, Kaduna",
+    "lat": 10.463437,
+    "lng": 7.44445,
+    "averageRating": 5,
+    "totalRatings": 4,
+    "reviews": [
+      {
+        "name": "Glenna O'Connell",
+        "stars": 5,
+        "comment": "It was much better than I expected. After my meal, I was knocked into a food coma. Make sure to save room for dessert, because that was the best part of the meal! This is definitely a spot I'll be frequenting."
+      },
+      {
+        "name": "Elisha Torphy",
+        "stars": 5,
+        "comment": "Everything was just so yummy. The waiter did an excellent job. Easily earned their 5 stars!"
+      },
+      {
+        "name": "Trenton Corwin",
+        "stars": 5,
+        "comment": "Yummy! The entrees are simply to die for. The waitress did an excellent job. Easily earned their 5 stars!"
+      },
+      {
+        "name": "Kayden Haag",
+        "stars": 5,
+        "comment": "I was happy to see how exceptional everything was. They got a new customer for life!"
+      }
+    ],
+    "restaurantId": "ChIJI-OxR7xLTRAReWEdtz8OOEs",
+    "photos": [
+      {
+        "height": 3264,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/108339177439401630142/photos\"\u003eOluseyi Samuel\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAiZbXNRwd6dWKYqDXKDHavwB6QF9j0udmf_CIZ4v6v4d53tXhDTC3fiXdJ1Zr9WtankQiPaKg1ZUkU5RN6B-wAWOvcMN0bo44emUFzAb_nXdySXjsxW-Ta3pYBq5B-KGvEhBPunajZPd-1qK0qQUj04sHGhQxik4EQ-quq1bg9OEmAl7bm2_ezw",
+        "width": 2448
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "Nibble Eatery",
+    "address": "6 Textile Road, Mekara, Kaduna",
+    "lat": 10.467766,
+    "lng": 7.451658,
+    "averageRating": 3,
+    "totalRatings": 1,
+    "reviews": [
+      {
+        "name": "Iliana Powlowski",
+        "stars": 3,
+        "comment": "I felt like this place wasn't trying hard enough. I found the entrees to be somewhat agreeable to my personal flavor-profile."
+      }
+    ],
+    "restaurantId": "ChIJVVVVVWxKTRARmvpkRWWIoj8",
+    "photos": [
+      {
+        "height": 640,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/102970878475943838239/photos\"\u003eSunday Viashima\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAo6WRp0oHjHKBcZbLSTEBswBMvpq7MXTgqDJAhmOWpMApKS079PohR0SkyG9eUmZkdrgEp9IzJbQNYcjdY9LHFERUArtq61YY7x7JKVE2wfKKRt9W8vizH0DiaX7OByYtEhB6nD2Wpjh2kDHjFXpGZuxbGhQGGfjVNscl0tlk0B_6eO9kM8OYTA",
+        "width": 640
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "Rity's Restaurant",
+    "address": "Barnawa Shopping Complex, 65 Somalia Road, Barnawa, Kaduna",
+    "lat": 10.470574,
+    "lng": 7.433346,
+    "averageRating": 4,
+    "totalRatings": 2,
+    "reviews": [
+      {
+        "name": "Kirsten Marvin",
+        "stars": 3,
+        "comment": "This place had a lot of heart. I felt the prices were too high given the quality of the food. "
+      },
+      {
+        "name": "Oscar Howe",
+        "stars": 5,
+        "comment": "The waiter did an excellent job. I found the ambiance to be very charming."
+      }
+    ],
+    "restaurantId": "ChIJSTxE-4s1TRARHjv1nm0p5w4",
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/102348740240710005945/photos\"\u003eJoy Ajuluchukwu\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAKddqPM6IG_NiEVhkyiHA0y4WTGITkD8eR0IKYR9Faq6C0FUy6ealr9gL2MbV7uUlcGurWV-_3vBmuYoVEqROEaxwyA_xOawtbv6f0BfuRJmeWrJpH75gXUni28ZdGO2NEhB1laQJKkdQcFBtqvo-lWimGhSxaX9d3hHmWxEj3hcCKJMI8DHpOg",
+        "width": 4608
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "Calabar Kitchen",
+    "address": "6 Mozambique Road, Barnawa, Kaduna",
+    "lat": 10.472014,
+    "lng": 7.432186,
+    "averageRating": 4.5,
+    "totalRatings": 2,
+    "reviews": [
+      {
+        "name": "Dawson Hand",
+        "stars": 4,
+        "comment": "I had a satisfactory experience and will have to try it again."
+      },
+      {
+        "name": "Marcellus Wiza",
+        "stars": 5,
+        "comment": "The entrees are simply to die for. Everything I tried was bursting with flavor."
+      }
+    ],
+    "restaurantId": "ChIJ34LasI41TRARu-WVgxN7EkA",
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/102348740240710005945/photos\"\u003eJoy Ajuluchukwu\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAANGjoS3OoJdZ2kbWMoqCUZZCIt5TmRx82eTbhm-oIJGUV_uVMyMnKJQi2ryCfpPilbEscZqS6QJbxceSPDC_8lVgKTeHExSHbOVpqHfV0vl-JEMj-zT4FqNsMdCWMWPIeEhDalhscFWKU2lUqNKB37jyxGhSubYuB0ElcJem9q-Wi74YUS-EmTA",
+        "width": 4608
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "Iyawo Restaurant",
+    "address": "Plot 35 Aliyu Makama Road, Barnawa, Kaduna",
+    "lat": 10.471407,
+    "lng": 7.434915,
+    "averageRating": 4,
+    "totalRatings": 4,
+    "reviews": [
+      {
+        "name": "Flavio Stracke",
+        "stars": 4,
+        "comment": "The entree I had was sublime. I felt the prices were too high."
+      },
+      {
+        "name": "Cletus Wintheiser",
+        "stars": 3,
+        "comment": "The service wasn't that good and the waiter was unprofessional. 3 stars."
+      },
+      {
+        "name": "Sydnee Wilderman",
+        "stars": 4,
+        "comment": "There were a lot of interesting decorations on the walls."
+      },
+      {
+        "name": "Laverna Hills",
+        "stars": 5,
+        "comment": "Best experience ever! Everything was just so yummy. The decor was unique and incredible."
+      }
+    ],
+    "restaurantId": "ChIJI4QJe4k1TRAR4SJ7jkR9Y6A",
+    "photos": [
+      {
+        "height": 3096,
+        "html_attributions": [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/106152059734412488316/photos\"\u003ePeter Okwukogu\u003c/a\u003e"
+        ],
+        "photo_reference": "CmRaAAAAOW0_cvmxjbjCzU9Nsta8PEZOP0r-vBmszGY10MZA-K_QCVhdQRUefUIJDg5ih3dHzAOfAwpvYTeH3NbAoXOuLtEM97_584G1CwST_P-LPnpeCqaFNbMtBuRYP9AK69ieEhByNYvQQRfJI6fr1_VZS4F2GhTHMEXbjN3zVJZado5dW2o2EyhXzA",
+        "width": 4128
+      }
+    ],
+    "customImg": "",
+    "source": "local"
+  },
+  {
+    "restaurantName": "First Treat Restaurant",
+    "address": "Shagari Rd, Barnawa, Kaduna",
+    "lat": 10.475346,
+    "lng": 7.443326,
+    "averageRating": 5,
+    "totalRatings": 1,
+    "reviews": [
+      {
+        "name": "Ryley Considine",
+        "stars": 5,
+        "comment": "This was one of the best mouth-watering steaks I've had grace my taste buds in a long time. I would eat here every day if I could afford it!"
+      }
+    ],
+    "restaurantId": "ChIJ2b2WBDhLTRARGTb3Rs0rjg0",
+    "photos": [],
+    "customImg": "",
+    "source": "local"
+  }
+]

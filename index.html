@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hamidu Abu">
+  <meta name="description" content="Restaurant Review App">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+  <title>Restaurant Reviews</title>
+</head>
+
+<body>
+  <header class="heading">
+    <!--! search box -->
+    <section id="search-container" class="search-bar invisible">
+      <h2>Search Restaurants</h2>
+      <form action="" id="search-form">
+        <label for="query"></label>
+        <input type="text" id="query" placeholder="Search Keyword" title="Enter Keyword to Search">
+        <button id="search-btn" title="Click to Start Search">Search</button>
+        <button id="clear-search-btn" title="Clear Search Results">Clear</button>
+        <button id="user-location-btn" title="Return To User Location">Home</button>
+      </form>
+    </section>
+    <!--! Main Heading -->
+    <h1>Restaurant Search & Reviews</h1>
+    <!--! filter -->
+    <section id="filter" class="filter-options invisible">
+      <h2>Filter Restaurants By Rating</h2>
+
+      <select name="filter-rating-from" id="filter-rating-from" required>
+        <option value="" hidden>From</option>
+        <option value="0">Unrated</option>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+
+      <select name="filter-rating-to" id="filter-rating-to" required>
+        <option value="" hidden>To</option>
+        <option value="0">Unrated</option>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+      <button id="filter-btn">Filter</button>
+    </section>
+  </header>
+
+
+  <section class="container">
+    <section class="map-container">
+      <!--! Map -->
+      <section class="map" id="google-map">
+        <p class="map-loading-msg">Loading ....</p>
+      </section>
+    </section>
+
+    <section class="lists">
+      <!--! Restaurant List -->
+      <section id="restaurants">
+        <ul id="restaurants-list"></ul>
+      </section>
+    </section>
+  </section>
+
+  <!--! Review Modal -->
+  <section id="review-modal" class="modal">
+    <section class="modal-content">
+      <!-- Modal Header -->
+      <header class="modal-header">
+        <h1 id="restaurant-name"></h1>
+        <section id="modal-restaurant-stars"></section>
+        <p id="restaurant-rating"></p>
+        <button id="close-modal-btn" class="close-btn">&times;</button>
+      </header>
+
+      <!-- Modal Body -->
+      <section class="modal-body">
+        <!-- New Review Form -->
+        <section class="new-review hidden">
+          <form id="add-review-form">
+            <section class="rating-name">
+              <input type="text" id="reviewer-name" placeholder="Enter Your Name" maxlength="32">
+            </section>
+
+            <!-- Rating Value -->
+            <section id="rating-stars" class="rating-inputs">
+              <label for="rating-one">
+                <p>1</p>
+                <input name="rating" type="radio" value="1" id="rating-one" required>
+                <img class="rating-star-img" src="assets/img/rating-star.svg" alt="Rate One Star">
+              </label>
+
+              <label for="rating-two">
+                <p>2</p>
+                <input name="rating" type="radio" value="2" id="rating-two">
+                <img class="rating-star-img" src="assets/img/rating-star.svg" alt="Rate Two Stars">
+              </label>
+
+              <label for="rating-three">
+                <p>3</p>
+                <input name="rating" type="radio" value="3" id="rating-three">
+                <img class="rating-star-img" src="assets/img/rating-star.svg" alt="Rate Three Stars">
+              </label>
+
+              <label for="rating-four">
+                <p>4</p>
+                <input name="rating" type="radio" value="4" id="rating-four">
+                <img class="rating-star-img" src="assets/img/rating-star.svg" alt="Rate Four Stars">
+              </label>
+
+              <label for="rating-five">
+                <p>5</p>
+                <input name="rating" type="radio" value="5" id="rating-five">
+                <img class="rating-star-img" src="assets/img/rating-star.svg" alt="Rate Five Stars">
+              </label>
+            </section>
+
+            <!-- Reviewer Comment -->
+            <label for="reviewer-comment"></label>
+            <textarea name="review-text" id="reviewer-comment" cols="" rows="5" maxlength="840"
+              placeholder="Type your review here"></textarea>
+
+            <!-- Submit Review -->
+            <section>
+              <button id="submit-review">Post Review</button>
+            </section>
+          </form>
+        </section>
+
+        <section id="restaurant-reviews-container" class="reviews-container">
+          <h3>REVIEWS</h3>
+          <ul id="reviews-list" class="modal-lists"></ul>
+        </section>
+
+        <!-- Restaurant Photo -->
+
+        <section class="restaurant-img-container">
+          <p id="img-error-msg"></p>
+          <img id="restaurant-image" class="restaurant-img" src="#" alt="Restaurant Image">
+        </section>
+      </section>
+
+      <!-- Modal Footer -->
+      <footer class="modal-footer">
+        <button id="add-review">Add A Review <span>&plus;</span></button>
+      </footer>
+    </section>
+  </section>
+
+  <!--! Add New Restaurant Form -->
+  <section id="new-restaurant-form" class="map-form hidden">
+    <h2>Add New Restaurant</h2>
+    <form action="">
+      <section>
+        <label for="new-restaurant-name">Restaurant Name<sup>*</sup></label>
+        <input id="new-restaurant-name" type="text" placeholder="E.g GreatMeals Restaurant" required focus>
+      </section>
+
+      <section>
+        <label for="new-restaurant-address">Restaurant Address<sup>*</sup></label>
+        <input id="new-restaurant-address" type="text" placeholder="E.g 415 Tasty Rice Street" required>
+      </section>
+
+      <section>
+        <label for="new-restaurant-img-url">Custom Image URL</label>
+        <input id="new-restaurant-img-url" type="text" placeholder="E.g https://greatmeals.com/img.jpg">
+      </section>
+
+      <section>
+        <label for="latitude">Location: latitude</label>
+        <input id="latitude" type="text" value="" readonly required disabled>
+      </section>
+
+      <section>
+        <label for="longitude">Location: Longitude</label>
+        <input id="longitude" type="text" value="" readonly required disabled>
+      </section>
+
+      <section>
+        <button id="new-restaurant-btn">ADD</button>
+        <button id="cancel-add-restaurant-btn">CANCEL</button>
+      </section>
+    </form>
+  </section>
+
+  <!--! Notifications -->
+  <section id="alert-msg" class="notification center hidden">
+    <h3>Alert!</h3>
+    <p></p>
+  </section>
+
+  <!--! Scripts -->
+  <!-- Replace API_KEY with valid Google Maps API key -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&v=3&libraries=geometry,places">
+  </script>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
