@@ -4,15 +4,13 @@
 
 To run this project locally
 
-- Extract the contents from the zip file
-
-- Go to folder `P7_hamidu\P7_01_HTML_CSS_JS`
+- Download and extract the contents from the zip file
 
 - Open `index.html` with a text editor
 
 - From the `script` tag on `line 204` replace the string 'API_KEY' with a valid Google Maps API key
 
-- Open the `js` folder at `P7_hamidu\P7_01_HTML_CSS_JS`
+- Open the `js` folder
 
 - Find and open the file `api-config.js`
 
